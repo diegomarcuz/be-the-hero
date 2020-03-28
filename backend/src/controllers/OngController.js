@@ -16,7 +16,6 @@ module.exports = {
       city,
       uf
     })
-    console.log(id)
     return response.json({ id });
   },
 

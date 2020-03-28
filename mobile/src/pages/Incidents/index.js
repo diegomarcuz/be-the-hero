@@ -8,10 +8,10 @@ import logo from '../../assets/logo.png'
 import api from '../../services/api'
 
 export default function Incidents() {
-  const [incidents, setIncidentes] = useState([])
-  const [total, setTotal] = useState([])
-  const [page, setPage] = useState([])
-  const [loading, setLoading] = useState([])
+  const [incidents, setIncidents] = useState([])
+  const [total, setTotal] = useState(0)
+  const [page, setPage] = useState(1)
+  const [loading, setLoading] = useState(false)
 
   const navigation = useNavigation();
 
@@ -20,25 +20,33 @@ export default function Incidents() {
   }
 
   async function loadIncidents() {
+
+
     if (loading) {
+
       return;
     }
 
     if (total > 0 && incidents.length === total) {
+
       return;
 
     }
+
     setLoading(true)
-    const response = await api.get("incidents")
-    setIncidentes([...incidents, ...response.data])
+    const response = await api.get(`incidents?page=${page}`)
+
+    setIncidents([...incidents, ...response.data])
+
     setTotal(response.headers['x-total-count'])
     setPage(page + 1)
     setLoading(false)
 
+
   }
   useEffect(() => {
     loadIncidents()
-  })
+  }, [])
 
 
 
@@ -56,7 +64,7 @@ export default function Incidents() {
       <View style={styles.header}>
         <Image source={logo} />
         <Text style={styles.headerText}>
-          Total de <Text style={styles.headerTextBold}>{total} casos</Text>.
+          Total de <Text style={styles.headerTextBold}>{total} caso(s)</Text>.
         </Text>
       </View>
 
@@ -72,8 +80,10 @@ export default function Incidents() {
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
         keyExtractor={incident => String(incident.id)}
+
         renderItem={({ item: incident }) => (
           <View style={styles.incident}>
+
             <Text style={styles.incidentProperty}>ONG:</Text>
             <Text style={styles.incidentValue}>{incident.name}</Text>
 
