@@ -22,7 +22,12 @@ Desenvolvido com:
 ## Primeiro Passos
 
 ### Clonar o projeto todo para a sua máquina
+
+#### SSH
 - git clone git@github.com:diegomarcuz/be-the-hero.git
+
+#### HTTPS
+- git clone https://github.com/diegomarcuz/be-the-hero.git
 
 
 ### Executar o frontend 
@@ -31,19 +36,19 @@ Desenvolvido com:
 - yarn start ou npm run start
 
 
-#### Executar o backend 
+### Executar o backend 
 - cd backend
 - yarn install ou npm install
 - yarn dev ou npm run dev
 
 
-#### Executar o mobile
- #####  Caso tenha o emulador no computador do Android ou do IOS:
+### Executar o mobile
+ ####  Caso tenha o emulador no computador do Android ou do IOS:
 - cd mobile
 - yarn install ou npm install
 - yarn dev ou npm run dev
 
- #####  Caso não tenha o emulador no computador do Android ou do IOS:
+ ####  Caso não tenha o emulador no computador do Android ou do IOS:
 - cd mobile
 - yarn install ou npm install
 - yarn start ou npm run start
