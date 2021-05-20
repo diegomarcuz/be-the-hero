@@ -1,27 +1,28 @@
 # Be the Hero
 
-## Descrição do projeto
+## Description
 
-Semana OmniStack 11 concluida!
-Aplicação, cujo nome é BE THE HERO, para cadastrar/consultar ONGs e seus respectivos casos.
+OmniStack week 11 finished!
+It is possible to add/list ONGs and its respectives use cases.
 
-## Ferramentas Utilizadas
-Desenvolvido com: 
+
+## Tools
+
 - ReactJS (Web)
 - React Native (App Híbrido)
 - NodeJS (Back-end)
-- Express (Criação das rotas)
-- Axios (Requisições HTTP)
-- Cors (Configurar uma url padrão para aplicação)
-- Celebrate (Algumas validações de dados no back-end)
-- Expo para o React Native
-- Jest (Testes Unitários e Testes Integrados)
-- Knex (Query builder para criar as migrations que criam as tabelas no bd)
+- Express (Routes handling)
+- Axios (HTTP Request)
+- Cors
+- Celebrate (data validation)
+- Expo for React Native
+- Jest (Unit and Integration Tests)
+- Knex (Query builder responsible to create the migrations in order to create database table)
 - SQLite
 
-## Primeiro Passos
+## First Step
 
-### Clonar o projeto todo para a sua máquina
+### Clone the project
 
 #### SSH
 - git clone git@github.com:diegomarcuz/be-the-hero.git
@@ -30,28 +31,28 @@ Desenvolvido com:
 - git clone https://github.com/diegomarcuz/be-the-hero.git
 
 
-### Executar o frontend 
+### Run frontend side
 - cd frontend
-- yarn install ou npm install
-- yarn start ou npm run start
+- yarn install or npm install
+- yarn start or npm run start
 
 
-### Executar o backend 
+### Run backend side
 - cd backend
-- yarn install ou npm install
-- yarn dev ou npm run dev
+- yarn install or npm install
+- yarn dev or npm run dev
 
 
-### Executar o mobile
- ####  Caso tenha o emulador no computador do Android ou do IOS:
+### Run mobile side
+ ####  If you have the emulator of Android or IOS on your machine:
 - cd mobile
-- yarn install ou npm install
-- yarn dev ou npm run dev
+- yarn install or npm install
+- yarn dev or npm run dev
 
- ####  Caso não tenha o emulador no computador do Android ou do IOS:
+ ####   If you don't have the emulator of Android or IOS on your machine:
 - cd mobile
-- yarn install ou npm install
-- yarn start ou npm run start
-- baixe o aplicativo do expo no celular
-- escaneia o QR Code que aparecerá no navegador (no canto inferior esquerdo)
-- o projeto abrirá automaticamente no seu celular
+- yarn install or npm install
+- yarn start or npm run start
+- download the EXPO app on your smartphone
+- scan the QR code which it is shown on the browser (bottom-left side of the screen)
+- done! project will run automatically on your smartphone
