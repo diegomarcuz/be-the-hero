@@ -6,7 +6,7 @@ OmniStack week 11 finished!
 It is possible to add/list ONGs and its respectives use cases.
 
 
-## Tools
+## Technologies
 
 - ReactJS (Web)
 - React Native (App Híbrido)
