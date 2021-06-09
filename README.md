@@ -2,8 +2,8 @@
 
 ## Description
 
-OmniStack week 11 finished!
-It is possible to add/list ONGs and its respectives use cases.
+OmniStack week 11 finished! 
+It is possible to add/list ONGs and their respective use cases.
 
 
 ## Technologies
